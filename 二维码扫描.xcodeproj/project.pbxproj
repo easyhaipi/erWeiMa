@@ -15,6 +15,9 @@
 		8AB327FC1D4632EE00D309D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB327FA1D4632EE00D309D7 /* LaunchScreen.storyboard */; };
 		8AB328071D4632EE00D309D7 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB328061D4632EE00D309D7 /* _____Tests.m */; };
 		8AB328121D4632EE00D309D7 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB328111D4632EE00D309D7 /* _____UITests.m */; };
+		8AB328271D46368100D309D7 /* 1469447898.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AB328261D46368100D309D7 /* 1469447898.png */; };
+		8AB3282B1D46377400D309D7 /* webTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB328291D46377400D309D7 /* webTestViewController.m */; };
+		8AB3282C1D46377400D309D7 /* webTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AB3282A1D46377400D309D7 /* webTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		8AB3280D1D4632EE00D309D7 /* 二维码扫描UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "二维码扫描UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB328111D4632EE00D309D7 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		8AB328131D4632EE00D309D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AB328261D46368100D309D7 /* 1469447898.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1469447898.png; sourceTree = "<group>"; };
+		8AB328281D46377400D309D7 /* webTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webTestViewController.h; sourceTree = "<group>"; };
+		8AB328291D46377400D309D7 /* webTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webTestViewController.m; sourceTree = "<group>"; };
+		8AB3282A1D46377400D309D7 /* webTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = webTestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +117,10 @@
 				8AB327FA1D4632EE00D309D7 /* LaunchScreen.storyboard */,
 				8AB327FD1D4632EE00D309D7 /* Info.plist */,
 				8AB327EC1D4632ED00D309D7 /* Supporting Files */,
+				8AB328261D46368100D309D7 /* 1469447898.png */,
+				8AB328281D46377400D309D7 /* webTestViewController.h */,
+				8AB328291D46377400D309D7 /* webTestViewController.m */,
+				8AB3282A1D46377400D309D7 /* webTestViewController.xib */,
 			);
 			path = "二维码扫描";
 			sourceTree = "<group>";
@@ -246,6 +257,8 @@
 				8AB327FC1D4632EE00D309D7 /* LaunchScreen.storyboard in Resources */,
 				8AB327F91D4632EE00D309D7 /* Assets.xcassets in Resources */,
 				8AB327F71D4632ED00D309D7 /* Main.storyboard in Resources */,
+				8AB3282C1D46377400D309D7 /* webTestViewController.xib in Resources */,
+				8AB328271D46368100D309D7 /* 1469447898.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AB327F41D4632ED00D309D7 /* ViewController.m in Sources */,
+				8AB3282B1D46377400D309D7 /* webTestViewController.m in Sources */,
 				8AB327F11D4632ED00D309D7 /* AppDelegate.m in Sources */,
 				8AB327EE1D4632ED00D309D7 /* main.m in Sources */,
 			);

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+
+#import "webTestViewController.h"
 #import <AVFoundation/AVFoundation.h>
 @interface ViewController ()<AVCaptureMetadataOutputObjectsDelegate>
 
@@ -17,6 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+  
+
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
     //获取摄像设备
     AVCaptureDevice * device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     //创建输入流
@@ -47,9 +57,24 @@
     
     //开始捕获
     [self.session startRunning];
-
 }
-
+-(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
+    NSLog(@"%s",__func__);
+    if (metadataObjects.count>0) {
+        //[session stopRunning];
+        AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex : 0 ];
+        //输出扫描字符串
+        NSLog(@"%@",metadataObject.stringValue);
+        
+        //停止扫描
+        [self.session stopRunning];
+        
+        //跳转控制器
+        webTestViewController *webVC = [[webTestViewController alloc] init];
+        webVC.urlString = metadataObject.stringValue;
+        [self.navigationController pushViewController:webVC animated:YES];
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
